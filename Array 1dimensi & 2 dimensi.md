@@ -1,0 +1,58 @@
+*Array 1 dimensi
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout << "Nama: Ahmad Hanif Fajri" << endl;
+    cout << "Prodi: Informatika (NK)" << endl;
+    cout << "Nim: 22343035 " << endl;
+    cout << "================================" << endl;
+    cout << "\tProgram Array 1 Dimensi" << endl;
+    cout << "================================" << endl;
+    
+    int i,j;
+    int nilai[10];
+    cout << "Berapa jumlah elemen yang ingin diisi? ";
+    cin >>j;
+    
+    for (i=0;i<j;i++){
+        cout << "Masukkan nilai ke-"<<i+1<<" = ";
+        cin >>nilai[i];
+    }
+    cout << "\nCetak Output" << endl;
+    for (i=0;i<j;i++){
+        cout << "Nilai ke-"<<i+1<<" = " <<nilai[i]<<endl;
+    }
+    return 0;
+}
+
+
+*Array 2 Dimensi
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout << "Nama: Ahmad Hanif Fajri " << endl;
+    cout << "Prodi: Informatika " << endl;
+    cout << "Nim: 22343035 " << endl;
+    cout << "============================\n";
+    
+    int bilangan[2][3];
+
+    for (int a=0;a<2;a++ ){
+        for (int b=0;b<3;b++){
+            cout << "Masukan index ke-" << a << "," << b << " = ";
+            cin >> bilangan[a][b];
+        }
+    }
+    cout << "\nMencetak hasil dari inputan " << endl;
+    cout << "============================" << endl;
+    for (int a=0;a<2;a++ ){
+        for (int b=0;b<3;b++){
+            cout << "Pada index ke-" << a << "," << b << " adalah " << bilangan[a][b] << endl;
+        }
+    }
+    return 0;
+}
